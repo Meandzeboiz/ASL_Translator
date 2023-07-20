@@ -10,6 +10,10 @@ In file explorer, go to desktop and make a folder titled with your name (I calle
 In this folder, make two more folders, one titled data and the other titled models. 
 On juicetanz's geoguessr project github page (https://github.com/juicetanz/geoguessr-ai/tree/main), download "reshape.py" and make sure it goes to your base folder. 
 On Dusty's jetsoninference github page (https://github.com/dusty-nv/pytorch-classification/tree/819b105087c397c23cd81fd9446b5f0a0213db94), download onnx_export.py, voc.py, nuswide.py, and train.py to your base folder. 
-Look back at your base folder and you should see these files and a new folder called pycache that has automatically formed. this folder contains the compressed python variants of the files you just downloaded, so DO NOT DELETE IT.
-On your jetson (connect and log in via SSH with putty, then go to VScode and add a host (your jetson's IP address) if you haven't already, then connect with the remote button) open the jetson inference folder in the nvidia folder. Make a new folder here titled with just your name or whatever you want to call it.
-(Note: just as a reminder, this program will not export or function on the jetson without a properly updated pip, pytorch and sufficient version of python). w
+Look back at your base folder and you should see these files and a new folder called pycache that has automatically formed. This folder contains the compressed python variants of the files you just downloaded, so DO NOT DELETE IT.
+On your jetson (connect and log in via SSH with putty, then go to VScode and add a host (your jetson's IP address) if you haven't already, then connect with the remote button) open the jetson inference folder in the nvidia folder. Make a new folder here titled with just your name or whatever you want to call it. Leave it alone for now. 
+(Note: just as a reminder, this program will not export or function on the jetson without a properly updated pip, pytorch and sufficient version of python). 
+## Fetching, organizing and fusing the datasets
+We will be getting these datasets off of kaggle, BUT WE WILL NOT BE TRAINING ON THERE. DO NOT TRY TO DOWNLOAD PRETRAINED MODELS FROM THERE, THE H5 TO ONNX WILL BE COMPLETE HELL.
+Download these datasets: "ASL Alphabet" by Akash, and "American Sign Language (ASL) Dataset" by Prathum Arikeri. Make sure they go to the data folder located in your base folder. 
+
