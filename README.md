@@ -4,3 +4,9 @@ as well as having it type out outputted letters, numbers spaces and delete lette
 # Instructions
 ## Setup and Foundations
 Firstly, you need both a jetson nano and an actual computer or laptop. We need the laptop as the jetson nano with its standard 32 gig microSD does not have the memory to hold all the required material and therefore cannot train the AI.
+Make sure the jetson nano has pip and its libraries installed and up to date, especially pytorch. In fact, make sure your jetson can get the latest version of python 3 to avoid any annoying errors you may get. Learn how to do all of this online (this is my second time writing this as the first time i accidentally obliterated this entire documentation with on swipe of the trackpad okay? please understand i have slight sanity deficiency from this project)
+Similarly, make sure you download the latest version of python 3 for your laptop or desktop computer, and install required libraries, especially pytorch (the version of pytorch must match your version of python to be compatible, at least that was what I dealt with)
+In file explorer, go to desktop and make a folder titled with your name (I called mine "JacobChanSecondAttempt" but you probably will choose something else so this folder will be referred to as the "base folder.")
+In this folder, make two more folders, one titled data and the other titled models. 
+On juicetanz's geoguessr project github page (https://github.com/juicetanz/geoguessr-ai/tree/main), download "reshape.py" and make sure it goes to your base folder. 
+On Dusty's jetsoninference github page (https://github.com/dusty-nv/pytorch-classification/tree/819b105087c397c23cd81fd9446b5f0a0213db94), download onnx_export.py, voc.py, nuswide.py, and train.py to your base folder. 
