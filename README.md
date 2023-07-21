@@ -25,7 +25,14 @@ The home set's train folder as you camn see is missing directories for del, noth
 Now we have to make the val folder. The val folder is essentially a smaller version of the train folder, so start by duplicating the train folder (in the home set folder, obviously). After it's done duplicating, rename the folder val and open it. inside we will have to essentially make each letter's train folder 1/5 or 2/5 of its original size, depending how fast you want the validation process to go. I'm going 2/5, and how I did this was i minimized the file explorer window by clicking the stop fullscreen button next to the exit "X," hopefully you know where that is. Now the files in the folders are in 5 neat collumns. Basically, hold click at the top of the list and drag down until you reach the bottom of the list (really pull down to make it scroll faster). Drag the cursor horizontally to select 3 of the five collumns, right click once selected, and delete. Repeat this step for every folder in the val folder, but make sure you keep track of where you are, as you do not want to unbalance the training by accidentally fractioning a val folder twice and giving it less images than the other val folders.
 Now that we have all the folders, we are (probably) ready to start the training process.
 ## Training
-Now comes the exciting but also boring part. Check for python 3 on your computer and make sure you also have pytorch and other requisites. after that, open Windows PowerShell. This python terminal is where we will execute the training command. In the terminal, type these commands in order:______________________________________________________________________. now, leave it be. your computer's GPU is going to be almost completely occupied, meaning no triple A titles for a day-ish. oh yeah, I sh*t you not, this will take up to an entire day. that's what you call slow cooked lmao. 
+Now comes the exciting but also boring part. Check for python 3 on your computer and make sure you also have pytorch and other requisites. after that, open Windows PowerShell. This python terminal is where we will execute the training command. In the terminal, type these commands in order: 
+```{bash}
+pip install onnx 
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install tensorboard
+python train.py data/thirdset -b=20 --epochs=30 
+```
+Now, leave it be. your computer's GPU is going to be almost completely occupied, meaning no triple A titles for a day-ish. oh yeah, I sh*t you not, this will take up to an entire day. that's what you call slow cooked lmao. 
 ## Labels
 while the AI trains, make a .txt file and rename it labels.txt, then inside that file list down the numbers, letters, del, nothing and space in alphabetical order (or the exact order that their folders are listed in the dataset). 
 ## Exporting
