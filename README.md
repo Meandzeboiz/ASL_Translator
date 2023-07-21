@@ -47,3 +47,5 @@ Make a data folder for images. Opening your camera app, take a picture or video 
 python3 imagenet.py --model=models/ASL/resnet18.onnx --labels=Data/labels.txt --input_blob=input_0 --output_blob=output_0 [your image file] output.mp4
 ```
 to run the AI on yoru chosen image. fill in the blank with the name of your image or video. if all goes well, the output image/video should be the image/video that you just fed the AI, now with a percentage and recognized letter or number at the top corner of the screen.
+# watch the video demonstration:
+https://www.youtube.com/watch?v=DpC0ZjYdGsw
